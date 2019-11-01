@@ -5,4 +5,4 @@
 
 <h2>To see the files live</h3>
 
-<p>To see what inside the folder run<b> npm run serve</b> after you have install all the neccessary packages this command will start a localhost serever on you computer in your command line it will show you on what port it is hosted</p>
+<p>To see what inside the folder run<b> npm run serve</b> after you have install all the neccessary packages this command will start a localhost serever on you computer in your command line it will show you on what port it is hosted like localhost:8080 default</p>
