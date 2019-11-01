@@ -1,5 +1,5 @@
 <h2>How To</h2>
-<p>Clone This Repo And move tou folder location in your command line And Run to install packages</p>
+<p>Clone This Repo And move to folder location in your command line And Run these below commands to install packages</p>
 
 <h4>Npm Install or npm i </h4>
 
