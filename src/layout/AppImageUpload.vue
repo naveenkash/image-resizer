@@ -95,13 +95,12 @@ export default {
     saveToDataBase(image) {
       var storage = firebase.storage();
       this.uploading = true;
-      console.log("uploading");
-
       var path = "/attachments/" + "/UserImages/" + Date.now() + ".jpg";
       var storageRef = storage.ref(path);
       var task = storageRef.put(image);
       task
         .then(snapshot => {
+          this.uploading = false;
           return task.snapshot.ref.getDownloadURL();
         })
         .then(url => {
