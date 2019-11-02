@@ -10,7 +10,7 @@
         <div class="container">
             <slot name="container-pre"></slot>
             <slot name="brand">
-                <a class="navbar-brand" href="#" @click.prevent="onTitleClick">
+                <a class="navbar-brand" href="/" @click.prevent="onTitleClick">
                     {{title}}
                 </a>
             </slot>

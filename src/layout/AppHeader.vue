@@ -1,24 +1,22 @@
 <template>
   <header class="header-global">
     <div style="position: relative">
-      <base-nav transparent type="primary" effect="light" expand>
-        <router-link class="navbar-brand" to="/">Image Uploader</router-link>
-
+      <base-nav type="primary" effect="dark" title="Image Uploader" expand>
         <div class="row" slot="content-header" slot-scope="{closeMenu}">
-          <div class="col-10 collapse-brand">
-            <h3>Image Uploader</h3>
+          <div class="col-8 collapse-brand">
+            <a href="/">Image Uploader</a>
           </div>
-          <div class="col-2 collapse-close">
+          <div class="col-4 collapse-close">
             <close-button @click="closeMenu"></close-button>
           </div>
         </div>
 
         <ul class="navbar-nav ml-lg-auto">
           <li class="nav-item">
-            <router-link class="nav-link" to="/">Home</router-link>
+            <a class="nav-link nav-link-icon" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/settings">Settings</router-link>
+            <a class="nav-link nav-link-icon" href="settings">Settings</a>
           </li>
         </ul>
       </base-nav>

@@ -3,8 +3,9 @@ import App from "./App.vue";
 import router from "./router";
 import firebase from "firebase";
 import Argon from "./plugins/argon-kit";
+
+import  store  from './store'
 import "./registerServiceWorker";
-import ImageUploader from "vue-image-upload-resize";
 var firebaseConfig = {
     apiKey: "AIzaSyAtD0mA0ZF5xLJvfYdhTcj7P_HOUgSH0eE",
     authDomain: "image-uploader-ff3a6.firebaseapp.com",
@@ -17,10 +18,9 @@ var firebaseConfig = {
 Vue.config.productionTip = false;
 
 firebase.initializeApp(firebaseConfig);
-
-Vue.use(ImageUploader);
 Vue.use(Argon);
 new Vue({
   router,
+  store,
   render: h => h(App)
 }).$mount("#app");
