@@ -18,7 +18,7 @@ export default new Vuex.Store({
       state.images = value;
     },
     updateLocalImageArray(state,value) {
-      state.images.push(value);
+      state.images.unshift(value);
     }
   },
   actions: {
