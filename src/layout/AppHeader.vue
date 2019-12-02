@@ -1,10 +1,10 @@
 <template>
   <header class="header-global">
     <div style="position: relative">
-      <base-nav type="primary" effect="dark" title="Image Uploader" expand>
+      <base-nav type="primary" effect="dark" title="Image Resizer" expand>
         <div class="row" slot="content-header" slot-scope="{closeMenu}">
           <div class="col-8 collapse-brand">
-            <a href="/">Image Uploader</a>
+            <a href="/">Image Resizer</a>
           </div>
           <div class="col-4 collapse-close">
             <close-button @click="closeMenu"></close-button>
