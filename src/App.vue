@@ -21,6 +21,6 @@ export default {
   },
   created() {
     this.getImagesFromDatabase();
-  },
+  }
 };
 </script>
