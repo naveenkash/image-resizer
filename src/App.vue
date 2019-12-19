@@ -22,10 +22,5 @@ export default {
   created() {
     this.getImagesFromDatabase();
   },
-  mounted() {
-    console.log('printing env');
-    
-    console.log(process.env);
-  },
 };
 </script>
