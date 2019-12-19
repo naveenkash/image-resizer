@@ -5,7 +5,7 @@ import firebase from "firebase";
 import Argon from "./plugins/argon-kit";
 import store from "./store";
 import "./registerServiceWorker";
-console.log(process.env.VUE_APP_PROJECTID);
+console.log(process.env);
 
 var firebaseConfig = {
   apiKey: process.env.VUE_APP_APIKEY,
