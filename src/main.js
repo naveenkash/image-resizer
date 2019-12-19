@@ -3,14 +3,15 @@ import App from "./App.vue";
 import router from "./router";
 import firebase from "firebase";
 import Argon from "./plugins/argon-kit";
-
 import store from "./store";
 import "./registerServiceWorker";
+console.log(process.env.VUE_APP_PROJECTID);
+
 var firebaseConfig = {
   apiKey: process.env.VUE_APP_APIKEY,
   authDomain: process.env.VUE_APP_AUTHDOMAIN,
   databaseURL: process.env.VUE_APP_DATABASEURL,
-  projectId: `${process.env.VUE_APP_PROJECTID}`,
+  projectId: process.env.VUE_APP_PROJECTID,
   storageBucket: process.env.VUE_APP_STORAGEBUCKET,
   messagingSenderId: process.env.VUE_APP_MESSAGINGSENDERID,
   appId: process.env.VUE_APP_APPID
